@@ -1,10 +1,10 @@
 <div class="container-fluid">
 <div class="container-fluid" style="padding:0 !important; margin:0 !important;">
   <p class="text-center" style="font-family:verdana !important; color:white !important; font-size:30px !important;"><b>Latest Updates</b></p>
-  <div class="title" style="float: left !important; width:30% !important;">
+  <div class="title" style="float: left !important; ">
   <a href="">  <b>  MATCHDAY 1 </b> </a>
   </div>
-  <div class="container" style="float:right !important;width:70% !important; "  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
+  <div class="container detail" style="float:right !important; "  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
      <a ng-href="#/filter/matchday/{{ indexValues[0].team1.code }}/{{ indexValues[0].team2.code }}/{{ indexValues[0].date }}/{{ indexValues[0].team1.name }}/{{ indexValues[0].team2.name }}/{{ indexValues[0].team1.key }}/{{ indexValues[0].team2.key }}/{{ indexValues[0].score1 }}/{{ indexValues[0].score2 }}" >
          <div class="card">
 
@@ -48,11 +48,11 @@
 </div>
 </div>
 <hr>
-<div class="container-fluid">
-  <div class="title" style="float: left !important; width:30% !important;">
+<div class="container-fluid" style="padding:0 !important; margin:0 !important;">
+  <div class="title" style="float: left !important;">
     <a href="">  <b>  MATCHDAY 2 </b> </a>
   </div>
-  <div class="container" style="float:right !important;width:70% !important;"  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
+  <div class="container detail" style="float:right !important;"  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
      <a ng-href="#/filter/matchday/{{ indexValues[1].team1.code }}/{{ indexValues[1].team2.code }}/{{ indexValues[1].date }}/{{ indexValues[1].team1.name }}/{{ indexValues[1].team2.name }}/{{ indexValues[1].team1.key }}/{{ indexValues[1].team2.key }}/{{ indexValues[1].score1 }}/{{ indexValues[1].score2 }}" >
          <div class="card">
 
@@ -97,11 +97,11 @@
 </div>
 </div>
 <hr>
-<div class="container-fluid">
-  <div class="title" style="float: left !important; width:30% !important;">
+<div class="container-fluid" style="padding:0 !important; margin:0 !important;">
+  <div class="title" style="float: left !important;">
     <a href="">  <b>  MATCHDAY 3 </b> </a>
   </div>
-  <div class="container" style="float:right !important;width:70% !important;"  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
+  <div class="container detail" style="float:right !important;"  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
      <a ng-href="#/filter/matchday/{{ indexValues[2].team1.code }}/{{ indexValues[2].team2.code }}/{{ indexValues[2].date }}/{{ indexValues[2].team1.name }}/{{ indexValues[2].team2.name }}/{{ indexValues[2].team1.key }}/{{ indexValues[2].team2.key }}//{{ indexValues[2].score1 }}/{{ indexValues[2].score2 }}" >
          <div class="card">
 
@@ -145,11 +145,11 @@
 </div>
 </div>
 <hr>
-<div class="container-fluid">
-  <div class="title" style="float: left !important; width:30% !important;">
+<div class="container-fluid" style="padding:0 !important; margin:0 !important;">
+  <div class="title" style="float: left !important; ">
     <a href="">  <b>  MATCHDAY 4 </b> </a>
   </div>
-  <div class="container" style="float:right !important;width:70% !important;"  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
+  <div class="container detail" style="float:right !important;"  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
 <a ng-href="#/filter/matchday/{{ indexValues[3].team1.code }}/{{ indexValues[3].team2.code }}/{{ indexValues[3].date }}/{{ indexValues[3].team1.name }}/{{ indexValues[3].team2.name }}/{{ indexValues[3].team1.key }}/{{ indexValues[3].team2.key }}/{{ indexValues[3].score1 }}/{{ indexValues[3].score2 }}">
          <div class="card">
 
@@ -194,11 +194,11 @@
 </div>
 </div>
 <hr>
-<div class="container-fluid">
-  <div class="title" style="float: left !important; width:30% !important;">
+<div class="container-fluid" style="padding:0 !important; margin:0 !important;">
+  <div class="title" style="float: left !important;">
     <a href="">  <b>  MATCHDAY 5 </b> </a>
   </div>
-  <div class="container" style="float:right !important;width:70% !important;"  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
+  <div class="container detail" style="float:right !important;"  ng-repeat="indexValues in myIndex.indexDetails | limitTo: 3">
      <a ng-href="#/filter/matchday/{{ indexValues[4].team1.code }}/{{ indexValues[4].team2.code }}/{{ indexValues[4].date }}/{{ indexValues[4].team1.name }}/{{ indexValues[4].team2.name }}/{{ indexValues[4].team1.key }}/{{ indexValues[4].team2.key }}//{{ indexValues[4].score1 }}/{{ indexValues[4].score2 }}" >
          <div class="card">
 
@@ -228,7 +228,7 @@
               </span>
               <br>
              <span>
-               <span style="float:left !important;" class="socre">
+               <span style="float:left !important;" class="score">
                  Goals : {{ indexValues[4].score1 }}
                </span>
 
@@ -248,5 +248,5 @@
 <br>
 <br>
 <hr>
-<p class="text-center"> <a ng-href="/Football-Scorecard-master/#/filter"><button type="button" name="button" style="width: 100% !important;"class="btn btn-success"> See More</button> </a> </p>
+<p class="text-center"> <a ng-href="#/filter"><button type="button" name="button" style="width: 100% !important;"class="btn btn-success"> See More</button> </a> </p>
 </div>

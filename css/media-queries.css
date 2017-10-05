@@ -1,0 +1,134 @@
+
+@media screen and (max-width:458px)
+{
+  .title
+  {
+    display: none !important;
+  }
+  .detail
+  {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .mainTeamOne1
+  {
+    display: none !important;
+  }
+  .team
+  {
+    display: none !important;
+  }
+  .singleMatchday
+  {
+    margin: 0 !important;
+  }
+  .dayView
+  {
+    width:100% !important;
+  }
+  .TeamOne
+  {
+    visibility: hidden !important;
+  }
+  .TeamTwo
+  {
+    visibility: hidden !important;
+  }
+  .myBtn
+  {
+    width: 100% !important;
+  }
+  .statsTotal
+  {
+    width: 100% !important;
+  }
+  .totalAll
+  {
+    margin:0 !important;
+  }
+  .filter-btn
+  {
+    width: 100% !important;
+  }
+  .xyz
+  {
+    width:100% !important;
+  }
+
+}
+
+@media screen and (min-width:459px) and (max-width:770px)
+{
+  .title
+  {
+    display: none !important;
+  }
+  .detail
+  {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .singleMatchday
+  {
+    margin: 0 !important;
+  }
+  .dayView
+  {
+    width:100% !important;
+  }
+  .xyz
+  {
+    width:50% !important;
+  }
+  .myBtn
+  {
+    width: 100% !important;
+  }
+  .statsTotal
+  {
+    width: 100% !important;
+  }
+  .totalAll
+  {
+    margin:0 !important;
+  }
+
+
+}
+
+@media screen and (min-width:771px)
+{
+  .singleMatchday
+  {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+  .dayView
+  {
+    width:50% !important;
+  }
+  .myBtn
+  {
+    width: 33% !important;
+  }
+  .statsTotal
+  {
+    width: 50% !important;
+  }
+  .xyz
+  {
+    width:50% !important;
+  }
+  .totalAll
+  {
+    margin:20px !important;
+  }
+  .abc
+  {
+    margin-left: 15% !important;
+    margin-right: 15% !important;
+  }
+
+}
