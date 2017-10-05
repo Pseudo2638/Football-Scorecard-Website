@@ -1,0 +1,54 @@
+<div>
+  <div class= "teamYearOne">
+    <div class="row container-fluid" ng-init="mySingleDate.arrangeSingleDatePage()" >
+    <div class="container-fluid" ng-repeat="singleDateView in mySingleDate.singleDateViews" style=" border : 1px solid white !important; padding-bottom: 10px !important; width:50% !important; display: inline-block !important;">
+
+
+    <div class="card"><p class="text-center"> Date : &nbsp{{singleDateView.date}}</p></div>
+    <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+    <div  class="card mainTeamOne" style="float:left !important;">Team :&nbsp{{singleDateView.team1.name}}</div>
+    <div  class="card mainTeamTwo" style="float:right !important;">Team :&nbsp{{singleDateView.team2.name}}</div>
+    </p>
+    <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+    <div  class="card mainTeamOne" style="float:left !important;">Code : &nbsp{{singleDateView.team1.code}}</div>
+    <div  class="card mainTeamTwo" style="float:right !important;">Code : &nbsp{{singleDateView.team2.code}}</div>
+    </p>
+    <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+    <div  class="card mainTeamOne" style="float:left !important;">Key : &nbsp{{singleDateView.team1.key}}</div>
+    <div  class="card mainTeamTwo" style="float:right !important;">Key : &nbsp{{singleDateView.team2.key}}</div>
+    </p>
+    <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+    <div  class="card mainTeamOne" style="float:left !important;">Goals : &nbsp{{singleDateView.score1}}</div>
+    <div  class="card mainTeamTwo" style="float:right !important;">Goals : &nbsp{{singleDateView.score2}}</div>
+    </p>
+
+</div>
+
+  <div class= "teamYearTwo">
+    <div class="row container-fluid" ng-init="mySingleDate.arrangeSingleDate2Page()" >
+    <div class="container-fluid" ng-repeat="singleDate2View in mySingleDate.singleDate2Views" style=" border : 1px solid white !important; padding-bottom: 10px !important; width:50% !important; display: inline-block !important;">
+
+
+    <div class="card"><p class="text-center"> Date : &nbsp{{singleDate2View.date}}</p></div>
+    <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+    <div  class="card mainTeamOne" style="float:left !important;">Team :&nbsp{{singleDate2View.team1.name}}</div>
+    <div  class="card mainTeamTwo" style="float:right !important;">Team :&nbsp{{singleDateView.team2.name}}</div>
+    </p>
+    <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+    <div  class="card mainTeamOne" style="float:left !important;">Code : &nbsp{{singleDate2View.team1.code}}</div>
+    <div  class="card mainTeamTwo" style="float:right !important;">Code : &nbsp{{singleDate2View.team2.code}}</div>
+    </p>
+    <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+    <div  class="card mainTeamOne" style="float:left !important;">Key : &nbsp{{singleDate2View.team1.key}}</div>
+    <div  class="card mainTeamTwo" style="float:right !important;">Key : &nbsp{{singleDate2View.team2.key}}</div>
+    </p>
+    <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+    <div  class="card mainTeamOne" style="float:left !important;">Goals : &nbsp{{singleDate2View.score1}}</div>
+    <div  class="card mainTeamTwo" style="float:right !important;">Goals : &nbsp{{singleDate2View.score2}}</div>
+    </p>
+
+    </div>
+      <p class="text-center"><a ng-href="#/filter/date"><button  class="btn btn-danger" name="button">Back</button></a></p>
+  </div>
+</div>
+  </div>

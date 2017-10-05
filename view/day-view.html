@@ -1,0 +1,66 @@
+<div class="container-fluid" ng-controller= "dayController" style="margin:0 !important; padding:0 !important;">
+  <div jquery style="margin:0 !important; padding:0 !important;">
+  <div style="diplay:inline-block !important; margin:0 !important; padding:0 !important;">
+    <button type="button" class="btn btn-primary teamOne" style="width:50%; float:left !important;" name="button"> 2015-16 </button>
+    <button type="button" class="btn btn-primary teamTwo" style="width:50%; float:right!important;" name="button"> 2016-17 </button>
+  </div>
+
+  <div class= "teamYearOne">
+<div class="row container-fluid" ng-init="myDay.arrangeDayPage()" >
+  <div class="container-fluid" ng-repeat="dayView in myDay.dayViews" style=" border : 1px solid white !important; padding-bottom: 10px !important; width:50% !important; display: inline-block !important;">
+
+
+  <div class="card"><p class="text-center"> Date : &nbsp{{dayView.date}}</p></div>
+  <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+  <div  class="card mainTeamOne" style="float:left !important;">Team :&nbsp{{dayView.team1.name}}</div>
+  <div  class="card mainTeamTwo" style="float:right !important;">Team :&nbsp{{dayView.team2.name}}</div>
+  </p>
+  <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+  <div  class="card mainTeamOne" style="float:left !important;">Code : &nbsp{{dayView.team1.code}}</div>
+  <div  class="card mainTeamTwo" style="float:right !important;">Code : &nbsp{{dayView.team2.code}}</div>
+  </p>
+  <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+  <div  class="card mainTeamOne" style="float:left !important;">Key : &nbsp{{dayView.team1.key}}</div>
+  <div  class="card mainTeamTwo" style="float:right !important;">Key : &nbsp{{dayView.team2.key}}</div>
+  </p>
+  <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+  <div  class="card mainTeamOne" style="float:left !important;">Goals : &nbsp{{dayView.score1}}</div>
+  <div  class="card mainTeamTwo" style="float:right !important;">Goals : &nbsp{{dayView.score2}}</div>
+  </p>
+
+  </div>
+    <p class="text-center"><a ng-href="#/filter/matchday"><button  class="btn btn-danger" name="button">Back</button></a></p>
+</div>
+</div>
+
+
+<div class= "teamYearTwo">
+
+<div class="row container-fluid" ng-init="myDay.arrangeDay2Page()" >
+  <div class="container-fluid" ng-repeat="day2View in myDay.day2Views" style=" border : 1px solid white !important; padding-bottom: 10px !important; width:50% !important; display: inline-block !important;">
+
+
+  <div class="card"><p class="text-center"> Date : &nbsp{{day2View.date}}</p></div>
+  <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+  <div  class="card mainTeamOne" style="float:left !important;">Team :&nbsp{{day2View.team1.name}}</div>
+  <div  class="card mainTeamTwo" style="float:right !important;">Team :&nbsp{{day2View.team2.name}}</div>
+  </p>
+  <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+  <div  class="card mainTeamOne" style="float:left !important;">Code : &nbsp{{day2View.team1.code}}</div>
+  <div  class="card mainTeamTwo" style="float:right !important;">Code : &nbsp{{day2View.team2.code}}</div>
+  </p>
+  <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+  <div  class="card mainTeamOne" style="float:left !important;">Key : &nbsp{{day2View.team1.key}}</div>
+  <div  class="card mainTeamTwo" style="float:right !important;">Key : &nbsp{{day2View.team2.key}}</div>
+  </p>
+  <p style="padding:0px !important; margin: 0 !important; display:inline-block !important; width:100% !important;">
+  <div  class="card mainTeamOne" style="float:left !important;">Goals : &nbsp{{day2View.score1}}</div>
+  <div  class="card mainTeamTwo" style="float:right !important;">Goals : &nbsp{{day2View.score2}}</div>
+  </p>
+
+  </div>
+    <p class="text-center"><a ng-href="#/filter/matchday"><button  class="btn btn-danger" name="button">Back</button></a></p>
+</div>
+</div>
+</div>
+</div>

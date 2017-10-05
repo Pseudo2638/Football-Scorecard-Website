@@ -1,0 +1,56 @@
+
+.filter-btn
+{
+   height:  auto !important;
+   font-size: 10px !important;
+}
+
+.borders
+{
+
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+.card
+{
+  box-shadow: 0 0 10px #666;
+  border-radius: 10px !important;
+  height: 100% !important;
+  background-color:white !important;
+}
+.card p {
+padding: 10px !important;
+font-family: verdana !important;
+}
+.title
+{
+  font-family: verdana !important;
+  color: white !important;
+
+}
+
+.date
+{
+  color: #C9854C  !important;
+}
+.team
+{
+  color: #956236   !important;
+}
+.code
+{
+  color: #989D6B   !important;
+}
+.score
+{
+  color:  #9D6B82 !important;
+}
+
+.mainTeamOne
+{
+  padding: 10px !important;
+}
+.mainTeamTwo
+{
+  padding: 10px !important;
+}

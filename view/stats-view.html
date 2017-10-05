@@ -1,0 +1,126 @@
+<div class="container-fluid" ng-controller="statsController" style=" margin: 0 !important; padding:0 !important;">
+<div jquery  style="margin: 0 !important; padding:0 !important;">
+  <div style="diplay:inline-block !important; margin: 0 !important; padding:0 !important;">
+    <button type="button" class="btn btn-primary select15" style="width:33%" name="button"> 2015-16 </button>
+    <button type="button" class="btn btn-primary select16" style="width:33%" name="button"> 2016-17 </button>
+    <button type="button" class="btn btn-primary selectTeamWise" style="width:33%" name="button"> Team Wise </button>
+  </div>
+<div class="row container-fluid" ng-init="myStats.arrangeStatsPage()" >
+  <div id="year15">
+
+<span style="margin:20px !important; margin-bottom:20px !important;">
+  <span>
+  <p class="text-center" style="padding:0px !important; margin:0 !important;">
+      <span style=" padding:10px !important;float:left !important; width:50% !important;">Highest Scorer : &nbsp &nbsp <span class="card" style="width:100% !important; padding:10px !important;" >{{ myStats.highestScorer }}</span></span>
+      <span style="padding:10px !important;float:right !important;  width:50% !important;">Lowest Scorer :&nbsp &nbsp<span class="card" style="width:100% !important; padding:10px !important;">{{ myStats.lowestScorer }}</span></span>
+  </p>
+</span>
+<span >
+  <p class="text-center" style="padding:0px !important; margin:0 !important;">
+      <span style=" padding:10px !important;float:left !important; width:50% !important;">Total Goals This Season : &nbsp &nbsp <span class="card" style="width:100% !important; padding:10px !important;" >{{ myStats.highestGoal }}</span></span>
+      <span style="padding:10px !important;float:right !important;  width:50% !important;">Total Goals This Season :&nbsp &nbsp<span class="card" style="width:100% !important; padding:10px !important;">{{ myStats.lowestGoal }}</span></span>
+  </p>
+  </span>
+</span>
+<hr class="small">
+<p class="text-center" style="font-family:verdana !important; color:white !important; font-size:30px !important;"><b>THIS SEASON'S SCORES RANKING</b> </p>
+<hr class="small">
+<div class="card" style="margin-left:30% !important; margin-right:30% !important; margin-top:10px !important; margin-bottom:10px !important; padding:0 !important;">
+    <div style="padding:0 !important;" class="container-fluid">
+      <span style=" padding-left : 5% !important; padding-right: 5% !important; color: white !important;border-radius: 10px !important;float: left !important; font-family : verdana !important;background-color: aqua !important;"><b >Rank</b></span>
+      <span style=" border-radius: 10px !important;margin-left:5%; font-family :verdana !important;"> <b>Team Name </b></span>
+      <span style="padding-left : 5% !important; padding-right: 5% !important;color :white !important; border-radius: 10px !important;float: right !important; background-color: aqua !important; font-family: verdana !important;"><b >Total Goals</b> </span>
+    </div>
+</div>
+<div class="card" style="margin-left:30% !important; margin-right:30% !important; margin-top:10px !important; margin-bottom:10px !important; padding:10px !important;" ng-repeat = "rank in myStats.ranking">
+    <span style="float: left !important;">{{rank.id}}</span> <span style="margin-left:25%;"> {{rank.name}}</span><span style="float: right !important;">{{rank.goals}} </span>
+</div>
+</div>
+
+<div class="container-fluid teamWise15" style="margin-top:5% !important; marging-bottom:5% !important;" >
+<div class="container-fluid card" style="margin-left:15% !important ; margin-right:15% !important;">
+  <p class="text-center">YEAR 2015-16</p>
+<div style="padding:10px !important;">
+  <span style="float:left !important;width:25% !important;">Team Name</span><span style="float:left !important; margin-left:10% !important;">Total Matches</span><span style=" margin-left:10% !important;">Total Wins</span><span style="float:right !important;">Total Loss</span>
+</div>
+</div>
+<div class="container-fluid card" style="margin-left:20% !important ; margin-right:20% !important; margin-top: 5% !important;">
+<div class="container-fluid " ng-repeat="teamWise in myStats.teamFlow">
+  <div style="padding:20px !important;">
+    <span style="float:left !important;width:25% !important;">{{teamWise.name}}</span><span style="float:left !important; margin-left:10% !important;">{{teamWise.totalMatches}}</span><span style=" margin-left:20% !important;">{{teamWise.wins}}</span><span style="float:right !important;">{{teamWise.loss}}</span>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="row container-fluid " ng-init="myStats.arrangeStats2Page()" >
+  <div class="year16">
+<span style="margin:20px !important; margin-bottom:20px !important;">
+  <span >
+  <p class="text-center" style="padding:0px !important; margin:0 !important;">
+      <span style=" padding:10px !important;float:left !important; width:50% !important;">Highest Scorer : &nbsp &nbsp <span class="card" style="width:100% !important; padding:10px !important;" >{{ myStats.highestScorer2 }}</span></span>
+      <span style="padding:10px !important;float:right !important;  width:50% !important;">Lowest Scorer :&nbsp &nbsp<span class="card" style="width:100% !important; padding:10px !important;">{{ myStats.lowestScorer2 }}</span></span>
+  </p>
+</span>
+<span >
+  <p class="text-center" style="padding:0px !important; margin:0 !important;">
+      <span style=" padding:10px !important;float:left !important; width:50% !important;">Total Goals This Season : &nbsp &nbsp <span class="card" style="width:100% !important; padding:10px !important;" >{{ myStats.highestGoal2 }}</span></span>
+      <span style="padding:10px !important;float:right !important;  width:50% !important;">Total Goals This Season :&nbsp &nbsp<span class="card" style="width:100% !important; padding:10px !important;">{{ myStats.lowestGoal2 }}</span></span>
+  </p>
+  </span>
+</span>
+<hr class="small">
+<p class="text-center" style="font-family:verdana !important; color:white !important; font-size:30px !important;"><b>THIS SEASON'S SCORES RANKING</b> </p>
+<hr class="small">
+<div class="card" style="margin-left:30% !important; margin-right:30% !important; margin-top:10px !important; margin-bottom:10px !important; padding:0 !important;">
+    <div style="padding:0 !important;" class="container-fluid">
+      <span style=" padding-left : 5% !important; padding-right: 5% !important; color: white !important;border-radius: 10px !important;float: left !important; font-family : verdana !important;background-color: aqua !important;"><b >Rank</b></span>
+      <span style=" border-radius: 10px !important;margin-left:5%; font-family :verdana !important;"> <b>Team Name </b></span>
+      <span style="padding-left : 5% !important; padding-right: 5% !important;color :white !important; border-radius: 10px !important;float: right !important; background-color: aqua !important; font-family: verdana !important;"><b >Total Goals</b> </span>
+    </div>
+</div>
+<div class="card" style="margin-left:30% !important; margin-right:30% !important; margin-top:10px !important; margin-bottom:10px !important; padding:10px !important;" ng-repeat = "rank2 in myStats.ranking2">
+    <span style="float: left !important;">{{rank2.id}}</span> <span style="margin-left:25%;"> {{rank2.name}}</span><span style="float: right !important;">{{rank2.goals}} </span>
+</div>
+</div>
+<div class="container-fluid teamWise16" style="margin-top:5% !important; marging-bottom:5% !important;" >
+<div class="container-fluid card" style="margin-left:15% !important ; margin-right:15% !important;">
+  <p class="text-center"> YEAR 2016-17</p>
+<div style="padding:10px !important;">
+  <span style="float:left !important;width:25% !important;">Team Name</span><span style="float:left !important; margin-left:10% !important;">Total Matches</span><span style=" margin-left:10% !important;">Total Wins</span><span style="float:right !important;">Total Loss</span>
+</div>
+</div>
+<div class="container-fluid card" style="margin-left:20% !important ; margin-right:20% !important; margin-top: 5% !important;">
+<div class="container-fluid " ng-repeat="teamWise2 in myStats.teamFlow2">
+  <div style="padding:20px !important;">
+    <span style="float:left !important;width:25% !important;">{{teamWise2.name}}</span><span style="float:left !important; margin-left:10% !important;">{{teamWise2.totalMatches}}</span><span style=" margin-left:20% !important;">{{teamWise2.wins}}</span><span style="float:right !important;">{{teamWise2.loss}}</span>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="container-fluid xx" ng-init="myStats.arrangeStatsPage()" >
+<div class="container-fluid card" style="margin-left:15% !important ; margin-right:15% !important;">
+<div style="padding:10px !important;">
+  <span style="float:left !important;width:25% !important;">Team Name</span><span style="float:left !important; margin-left:10% !important;">Total Matches</span><span style=" margin-left:10% !important;">Total Wins</span><span style="float:right !important;">Total Loss</span>
+</div>
+</div>
+<div class="container-fluid card" style="margin-left:20% !important ; margin-right:20% !important; margin-top: 5% !important;">
+<div class="container-fluid " ng-repeat="teamWise in myStats.teamFlow">
+  <div style="padding:20px !important;">
+    <span style="float:left !important;width:25% !important;">{{teamWise.name}}</span><span style="float:left !important; margin-left:10% !important;">{{teamWise.totalMatches}}</span><span style=" margin-left:20% !important;">{{teamWise.wins}}</span><span style="float:right !important;">{{teamWise.loss}}</span>
+  </div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
