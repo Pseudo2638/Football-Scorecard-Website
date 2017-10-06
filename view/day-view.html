@@ -6,7 +6,7 @@
   </div>
 
   <div class= "teamYearOne">
-<div class="row container-fluid dayView" ng-init="myDay.arrangeDayPage()" style="margin:0 !important; padding: 0 !important;" >
+<div class="row container-fluid" ng-init="myDay.arrangeDayPage()" style="margin:0 !important; padding: 0 !important;" >
   <div class="container-fluid dayView" ng-repeat="dayView in myDay.dayViews" style=" border : 1px solid white !important; padding-bottom: 10px !important;  display: inline-block !important;">
 
 
@@ -36,8 +36,8 @@
 
 <div class= "teamYearTwo">
 
-<div class="row container-fluid dayView" ng-init="myDay.arrangeDay2Page()" style="margin:0 !important; padding: 0 !important;" >
-  <div class="container-fluid" ng-repeat="day2View in myDay.day2Views" style=" border : 1px solid white !important; padding-bottom: 10px !important; display: inline-block !important;">
+<div class="row container-fluid " ng-init="myDay.arrangeDay2Page()" style="margin:0 !important; padding: 0 !important;" >
+  <div class="container-fluid dayView" ng-repeat="day2View in myDay.day2Views" style=" border : 1px solid white !important; padding-bottom: 10px !important; display: inline-block !important;">
 
 
   <div class="card"><p class="text-center"> Date : &nbsp{{day2View.date}}</p></div>
